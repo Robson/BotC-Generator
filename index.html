@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-2E561F2422"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'G-2E561F2422');
+		</script>-->
+		<!--
+		************************************************
+		The script above is for google analytics.
+		You'll want to remove that if you use this page.
+		************************************************
+		-->
+		<title>BotC Random Character Generator</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://d3js.org/d3.v3.min.js"></script>
+		<script src="data/townsfolk.js"></script>
+		<script src="data/outsider.js"></script>
+		<script src="data/minion.js"></script>
+		<script src="data/demon.js"></script>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+
+		<h1>Blood on the Clocktower:<br/>Random Character Generator</h1>
+
+		<p>
+			<input id="createTownsfolk" type="button" value="Townsfolk" onclick="createCharacter('Townsfolk')" />
+			<input id="createOutsider" type="button" value="Outsider" onclick="createCharacter('Outsider')" />
+			<input id="createMinion" type="button" value="Minion" onclick="createCharacter('Minion')" />
+			<input id="createDemon" type="button" value="Demon" onclick="createCharacter('Demon')" />
+			◆
+			<input id="createScript" type="button" value="Script" onclick="createScript()" />
+		</p>
+
+		<div id="content">
+			<p id="name"></p>
+			<p id="description"></p>
+		</div>
+		<div id="script">
+		</div>
+
+		<p><input id="copy" type="button" value="Copy" onclick="copyCharacter()" /></p>
+
+		<p id="footer">
+			Data by <a href="https://www.reddit.com/user/DrewHancock">Drew</a>.
+			<a href="https://github.com/Robson/BotC-Generator">Code</a> by <a href="https://robson.plus">Robson</a>.
+			<br/>
+			Not affiliated with or endorsed by The Pandemonium Institute.
+		</p>
+
+		<script>
+
+			var character = '';
+
+			d3.select('#content').style('display', 'none');
+			d3.select('#copy').style('display', 'none');
+			d3.select('#script').style('display', 'none');
+			d3.select('#footer').style('display', 'none');
+
+			function randomItemFromArray(arr) {
+				return arr[~~(Math.random() * arr.length)];
+			}
+
+			function getLibraryForRole(role) {
+				switch (role) {
+					case 'Townsfolk': return townsfolk;
+					case 'Outsider':  return outsider;
+					case 'Minion':    return minion;
+					case 'Demon':     return demon;
+				}
+			}
+
+			function createCharacter(role) {
+				var library = getLibraryForRole(role);
+				var name = createName(library);
+				var description = createDescription(library);
+				character = name + ': ' + simplifyDescription(description);
+
+				d3.select('#name').html(name);
+				d3.select('#description').html(description);
+				d3.select('#content').style('display', null);
+				d3.select('#script').style('display', 'none');
+				d3.select('#copy').style('display', null);
+				d3.select('#footer').style('display', null);
+				d3.selectAll('input').classed('selected', false);
+				d3.select('#create' + role).classed('selected', true);
+			}
+
+			function createName(library) {
+				var name = randomItemFromArray(library.adjective) + ' ' + randomItemFromArray(library.noun);
+				name = name.replace('- ', '-');
+				return name;
+			}
+
+			function createDescription(library) {
+				var description = randomItemFromArray(library.frequency) + '<br/>';
+
+				var style = randomItemFromArray(library.styles);
+				for (var item of style) {
+					description += randomItemFromArray(item) + '<br/>';
+				}
+
+				if (library.hasOwnProperty('extraChance') &&
+				    library.hasOwnProperty('extraEffects')) {
+					if (Math.random() <= library.extraChance) {
+						description += randomItemFromArray(library.extraEffects);
+					}
+				}
+
+				return description;
+			}
+
+			function simplifyDescription(description) {
+				while (description.includes('<br/>')) {
+					description = description.replace('<br/>', ' ');
+				}
+				return description;
+			}
+
+			function copyCharacter() {
+				navigator.clipboard.writeText(character);
+				alert('Character copied to the clipboard!');
+				return;
+			}
+
+			function createScript() {
+				d3.select('#content').style('display', 'none');
+				d3.select('#script').style('display', null);
+				d3.select('#copy').style('display', 'none');
+				d3.select('#footer').style('display', null);
+				d3.selectAll('input').classed('selected', false);
+				d3.select('#createScript').classed('selected', true);
+				d3.selectAll('#script *').remove();
+
+				var script = d3.select('#script').append('table');
+				addRowsForRole(script, 13, 'Townsfolk', 'Townsfolk');
+				addRowsForRole(script,  4, 'Outsider', 'Outsiders');
+				addRowsForRole(script,  4, 'Minion', 'Minions');
+				addRowsForRole(script,  4, 'Demon', 'Demons');
+			}
+
+			function addRowsForRole(script, amount, role, title) {
+				script
+					.append('tr')
+					.classed('header', true)
+					.append('td')
+					.attr('colspan', 2)
+					.html(title);
+				var library = getLibraryForRole(role);
+				var chars = [];
+				for (var a = 0; a < amount; a++) {
+					var name = createName(library);
+					var description = simplifyDescription(createDescription(library));
+					chars.push({ name: name, description: description });
+				}
+				chars = chars.sort((a, b) => a.description > b.description);
+				for (var char of chars) {
+					var row = script.append('tr');
+					row.append('th').html(char.name);
+					row.append('td').html(char.description);
+				}
+			}
+
+		</script>
+	</body>
+</html>
