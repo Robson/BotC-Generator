@@ -1,4 +1,4 @@
-# BotC Generator 
+# Blood on the Clocktower: Generator 
 
 ## Table of Contents
 
