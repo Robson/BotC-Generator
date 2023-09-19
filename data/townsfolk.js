@@ -406,7 +406,7 @@
 				"if the Demon kills you...",
 				"if you are nominated by a Townsfolk...",
 				"if you die...",
-				"Minions & Demons do not know each other. If you die...",
+				"if you die...",
 				"publicly choose a player: if they are the Demon...",
 				"you become the alignment of an alive neighbor. If all good players choose to join your cult...",
 				"you gain the ability of the recently killed executee. If they are evil...",
@@ -505,5 +505,6 @@
 		"You register as living, even if dead.",
 		"Minions know who you are.",
 		"[1 Minion is good and does not learn who is evil.]",
+		"Minions & Demons do not know each other.",
 	],
 };
