@@ -24,6 +24,8 @@
 		<script src="data/outsider.js"></script>
 		<script src="data/minion.js"></script>
 		<script src="data/demon.js"></script>
+		<script src="data/script_adjective.js"></script>
+		<script src="data/script_noun.js"></script>
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik&display=swap">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
@@ -39,7 +41,7 @@
 			<input id="createOutsider" type="button" value="Outsider" onclick="createCharacter('Outsider')">
 			<input id="createMinion" type="button" value="Minion" onclick="createCharacter('Minion')">
 			<input id="createDemon" type="button" value="Demon" onclick="createCharacter('Demon')">
-			◆
+			<span id="diamond">◆</span>
 			<input id="createScript" type="button" value="Script" onclick="createScript()">
 		</p>
 
@@ -50,7 +52,8 @@
 		<div id="script">
 		</div>
 
-		<p><input id="copy" type="button" value="Copy" onclick="copyCharacter()"></p>
+		<p id="copyCharacter"><input type="button" value="Copy" onclick="copyCharacter()"></p>
+		<p id="copyScript"><input type="button" value="Reorder &amp; Copy" onclick="copyScript()"></p>
 
 		<p id="footer">
 			Data by <a href="https://www.reddit.com/user/DrewHancock">Drew</a>.
@@ -62,22 +65,29 @@
 		<script>
 
 			var character = '';
+			var fullScript = [];
+			var scriptName = '';
+			var version = 0;
 
 			d3.select('#content').style('display', 'none');
-			d3.select('#copy').style('display', 'none');
+			d3.select('#copyCharacter').style('display', 'none');
+			d3.select('#copyScript').style('display', 'none');
 			d3.select('#script').style('display', 'none');
 			d3.select('#footer').style('display', 'none');
+
+			scriptAdjectives = scriptAdjectives.trim().split('\n');
+			scriptNouns = scriptNouns.trim().split('\n');
 
 			function randomItemFromArray(arr) {
 				return arr[~~(Math.random() * arr.length)];
 			}
 
 			function getLibraryForRole(role) {
-				switch (role) {
-					case 'Townsfolk': return townsfolk;
-					case 'Outsider':  return outsider;
-					case 'Minion':    return minion;
-					case 'Demon':     return demon;
+				switch (role.toLowerCase()) {
+					case 'townsfolk': return townsfolk;
+					case 'outsider':  return outsider;
+					case 'minion':    return minion;
+					case 'demon':     return demon;
 				}
 			}
 
@@ -91,7 +101,8 @@
 				d3.select('#description').html(description);
 				d3.select('#content').style('display', null);
 				d3.select('#script').style('display', 'none');
-				d3.select('#copy').style('display', null);
+				d3.select('#copyCharacter').style('display', null);
+				d3.select('#copyScript').style('display', 'none');
 				d3.select('#footer').style('display', null);
 				d3.selectAll('input').classed('selected', false);
 				d3.select('#create' + role).classed('selected', true);
@@ -137,39 +148,128 @@
 			function createScript() {
 				d3.select('#content').style('display', 'none');
 				d3.select('#script').style('display', null);
-				d3.select('#copy').style('display', 'none');
+				d3.select('#copyCharacter').style('display', 'none');
+				d3.select('#copyScript').style('display', null);
 				d3.select('#footer').style('display', null);
 				d3.selectAll('input').classed('selected', false);
 				d3.select('#createScript').classed('selected', true);
-				d3.selectAll('#script *').remove();
 
-				var script = d3.select('#script').append('table');
-				addRowsForRole(script, 13, 'Townsfolk', 'Townsfolk');
-				addRowsForRole(script,  4, 'Outsider', 'Outsiders');
-				addRowsForRole(script,  4, 'Minion', 'Minions');
-				addRowsForRole(script,  4, 'Demon', 'Demons');
+				version = 0;
+				makeRandomScriptName();
+				fullScript = [];
+				addRowsForRole(13, 'Townsfolk', 'Townsfolk');
+				addRowsForRole( 4, 'Outsider', 'Outsiders');
+				addRowsForRole( 4, 'Minion', 'Minions');
+				addRowsForRole( 4, 'Demon', 'Demons');
+				fullScript = fullScript.sort((a, b) => a.description > b.description);
+				outputScript();
 			}
 
-			function addRowsForRole(script, amount, role, title) {
-				script
-					.append('tr')
-					.classed('header', true)
-					.append('td')
-					.attr('colspan', 2)
-					.html(title);
+			function makeRandomScriptName() {
+
+				var connections = [
+					'of',
+					'in',
+					'and',
+					'by',
+					'with'
+				];
+				var patterns = [
+					'The {adjective} {noun}',
+					'{noun} {connection} the {noun}',
+					'{noun} {connection} the {adjective} {noun}',
+					'{adjective} {noun} {connection} the {noun}'
+				];
+
+				var pattern = randomItemFromArray(patterns);
+
+				scriptName = pattern
+					.replace('{connection}', randomItemFromArray(connections))
+					.replace('{adjective}', randomItemFromArray(scriptAdjectives))
+					.replace('{adjective}', randomItemFromArray(scriptAdjectives))
+					.replace('{adjective}', randomItemFromArray(scriptAdjectives))
+					.replace('{noun}', randomItemFromArray(scriptNouns))
+					.replace('{noun}', randomItemFromArray(scriptNouns))
+					.replace('{noun}', randomItemFromArray(scriptNouns));
+
+			}
+
+			function hasDuplication(name, description, arr) {
+				return arr.some(a => a.name == name) || arr.some(a => a.description == description);
+			}
+
+			function createCharacterFromLibrary(library, existing) {
+				var name = '', description = '';
+				do {
+					name = createName(library);
+					description = simplifyDescription(createDescription(library));
+				} while (hasDuplication(name, description, fullScript) || hasDuplication(name, description, existing));
+				return { name: name, description: description };
+			}
+
+			function addRowsForRole(amount, role, title) {
 				var library = getLibraryForRole(role);
 				var chars = [];
 				for (var a = 0; a < amount; a++) {
-					var name = createName(library);
-					var description = simplifyDescription(createDescription(library));
-					chars.push({ name: name, description: description });
+					chars.push(createCharacterFromLibrary(library, chars));
 				}
-				chars = chars.sort((a, b) => a.description > b.description);
 				for (var char of chars) {
-					var row = script.append('tr');
-					row.append('th').html(char.name);
-					row.append('td').html(char.description);
+					fullScript.push({ role: role, name: char.name, description: char.description });
 				}
+			}
+
+			function rerole(index) {
+				var library = getLibraryForRole(fullScript[index].role);
+				var next = createCharacterFromLibrary(library, []);
+				fullScript[index].name = next.name;
+				fullScript[index].description = next.description;
+				version++;
+				outputScript();
+			}
+
+			function outputScript() {
+				d3.selectAll('#script *').remove();
+				d3.select('#script').append('h2').html(scriptName).append('span').attr('id', 'version').html('v1.' + version);
+				var script = d3.select('#script').append('table');
+				var previousRole = '';
+				fullScript = fullScript.sort((a, b) => a.role.length < b.role.length);
+				for (var index in fullScript) {
+					var line = fullScript[index];
+					if (line.role != previousRole) {
+						script
+							.append('tr')
+							.classed('header', true)
+							.append('td')
+							.attr('colspan', 3)
+							.html(line.role + (line.role == 'Townsfolk' ? '' : 's'));
+						previousRole = line.role;
+					}
+					var row = script.append('tr');
+					row.append('td').html("🎲").classed('dice', true).attr('onclick', 'rerole(' + index + ')').attr('title', 'Remove this character and create a new one.');
+					row.append('th').html(line.name);
+					row.append('td').html(line.description);
+				}
+			}
+
+			function copyScript() {
+				fullScript = fullScript.sort((a, b) => a.description > b.description);
+				outputScript();
+
+				var output = '== ' + scriptName + ' v1.' + version + ' ==\r\n';
+				var previousRole = '';
+
+				for (var index in fullScript) {
+					var line = fullScript[index];
+					if (line.role != previousRole) {
+						output += '\r\n=== ' + line.role + (line.role == 'Townsfolk' ? '' : 's') + ' ===\r\n';
+						previousRole = line.role;
+					}
+					output += '*' + line.name + '*: ' + line.description + '\r\n';
+				}
+
+				navigator.clipboard.writeText(output);
+				alert('Script copied to the clipboard!');
+				return;
 			}
 
 		</script>

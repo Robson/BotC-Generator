@@ -26,6 +26,20 @@ h1 {
 	font: 500 40px 'roboto slab', georgia, serif;
 }
 
+h2 {
+	text-align: left;
+	font: 500 40px 'roboto slab', georgia, serif;
+	margin: 0 2px;
+	padding: 20px 0 0;
+	border-bottom: 2px solid #ddd;
+}
+
+h2 #version {
+	font: 300 20px 'roboto slab', georgia, serif;
+	margin-left: 5px;
+	opacity: 0.666;
+}
+
 /***** LINKS *****/
 
 a {
@@ -92,6 +106,10 @@ th {
 	font: 500 30px 'roboto slab', georgia, serif;	
 }
 
+.dice {
+	cursor: pointer;
+}
+
 /***** FOOTER *****/
 
 #footer {
@@ -137,4 +155,8 @@ input[type="button"]:active {
 input[type="button"].selected {
 	background: #E5007E;
 	border-bottom: 3px solid #F17EBD;
+}
+
+#diamond {
+	font-size: 125%;
 }
