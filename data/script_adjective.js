@@ -10,11 +10,11 @@ Aquatic
 Arid
 Ash
 Bad
+Banished
 Barren
 Beautiful
 Benevolent
 Birch
-Black
 Bleeding
 Blessed
 Blistering
@@ -79,6 +79,7 @@ Executed
 Fabled
 Fake
 Fall
+Fallen
 Falling
 False
 Final
@@ -144,8 +145,8 @@ Lunar
 Lying
 Mage
 Magical
-Malignant
 Majestic
+Malignant
 Marble
 Mean
 Metro
@@ -156,7 +157,7 @@ Mistral
 Mossy
 Mount
 Muddy
-Murder
+Murdered
 Musical
 Mysterious
 Mystic
@@ -176,6 +177,7 @@ Old
 Omnipotent
 One
 Orange
+Painted
 Pegasus
 Pentagon
 Pinched

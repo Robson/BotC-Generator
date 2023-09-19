@@ -26,7 +26,6 @@ Beast
 Beasts
 Beetle
 Belfry
-Block
 Bluff
 Bone
 Book
@@ -50,12 +49,10 @@ Cat
 Catacomb
 Cauldron
 Cedar
-Center
 Chain
 Chalice
 Chick
 Chicken
-Circle
 Claw
 Cliff
 Cobra
@@ -130,7 +127,6 @@ Halfling
 Hammer
 Haven
 Hawk
-Head
 Heart
 Henge
 Hero
@@ -150,6 +146,7 @@ King
 Kingdom
 Knoll
 Labyrinth
+Lady
 Lake
 Lamb
 Lance
@@ -167,13 +164,11 @@ Loft
 Lunatic
 Mace
 Mage
-Man
 Meadhall
 Metropolis
 Mill
 Minion
 Mist
-Mon
 Monster
 Moon
 Moor
@@ -184,8 +179,6 @@ Necromancer
 Necronomicon
 Night
 Nights
-Nonagon
-Number
 Oak
 Oasis
 Ocean
@@ -264,7 +257,6 @@ Side
 Siege
 Skeleton
 Skull
-Slave
 Snake
 Soldier
 Son
@@ -295,9 +287,9 @@ Territory
 Thief
 Thieves
 Thunder
-Tome
 Tomb
 Tombstone
+Tome
 Town
 Trail
 Trap
