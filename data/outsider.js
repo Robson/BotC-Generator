@@ -137,7 +137,7 @@
 		[ // conditional
 			[ // conditional-power
 				"1 player is drunk, even if you die. If you guess (once) wrong get false info, but guess who it is and",
-				"If a minion publicly guesses you (once),",
+				"if a Minion publicly guesses you (once),",
 				"if either good living neighbor is drunk or poisoned,",
 				"if you are \"mad\" about being an Outsider,",
 				"if you are the player most responsible for your team losing,",
