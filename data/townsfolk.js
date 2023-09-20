@@ -76,6 +76,10 @@
 		"Parish",
 		"Sweets",
 		"Spice",
+		"Apprentice",
+		"Bone",
+		"Deviant",
+		"Gun",
 	],
 
 	noun:
@@ -155,6 +159,20 @@
 		"Playwright",
 		"Troubadour",
 		"Boatman",
+		"Barista",
+		"Beggar",
+		"Bishop",
+		"Bureaucrat",
+		"Butcher",
+		"Collector",
+		"Gangster",
+		"Harlot",
+		"Judge",
+		"Matron",
+		"Scapegoat",
+		"Slinger",
+		"Thief",
+		"Voudon",
 	],
 
 	frequency:
@@ -272,6 +290,21 @@
 		"The 1st time you are executed,",
 		"The 1st time you nominate,",
 		"When you are executed,",
+		"Each day,",
+		"Each day,",
+		"Each day,",
+		"Each day,",
+		"Each day,",
+		"Each day,",
+		"Each day,",
+		"Each night,",
+		"Each night,",
+		"Each night,",
+		"Each night*,",
+		"On your 1st night,",
+		"Once per day,",
+		"Once per game,",
+		"Once per game, at night,",
 	],
 
 	styles:
@@ -316,6 +349,10 @@
 				"you learn how many dead players are Outsiders.",
 				"you learn which Demon is in play, 1 of their bluffs, & 1 of their Minions. 1 is true and 2 are false.",
 				"you many choose to kill every player that targeted you during the most recent night.",
+				"after the first execution, you may nominate again.",
+				"only the Storyteller can nominate. At least 1 opposing player must be nominated each day.",
+				"only you & the dead can vote. They don't need a vote token to do so.",
+				"you gain a Townsfolk ability or a Minion ability.",
 			]
 		],
 		[ // choice
@@ -414,6 +451,8 @@
 				"choose up to 4 players:"
 				"publicly choose 2 players:"
 				"you may choose up to 2 players:"
+				"you may choose an alive neighbor. If your other alive neighbor agrees,",
+				"you may choose up to 3 sets of 2 players:",
 			],
 			[ // double-choice-effect
 				"you learn if they are the same alignment.",
@@ -425,6 +464,8 @@
 				"learn how many of each character type are among those players",
 				"they are drunk for 2 days and nights, but you can't use your power tomorrow night.",
 				"they can't die tonight. You may choose yourself (once).",
+				"they die.",
+				"they swap seats. Players may not leave their seats to talk in private.",
 			]
 		],
 		[ // conditional
@@ -470,6 +511,12 @@
 				"you may choose to die. If you do,",
 				"you may choose to die. If you do,",
 				"you may publicly predict another player's death. Tonight, if they die,",
+				"after the 1st vote has been tallied, you may choose a player that voted:",
+				"choose a dead player:",
+				"choose a living player:",
+				"choose a player (not yourself):",
+				"choose a player (not yourself):",
+				"the Storyteller chooses a player:",
 			],
 			[ // conditional-effect
 				"a Demon dies.",
@@ -509,6 +556,12 @@
 				"you may publicly choose a player. If they are evil, they die.",
 				"your team wins.",
 				"your team wins.",
+				"if they agree, you learn their character, but you both might die.",
+				"their vote counts as 3 votes tomorrow.",
+				"their vote counts negatively tomorrow.",
+				"they become sober, healthy & get true info, or 2) their ability works twice. They learn which.",
+				"they die.",
+				"they regain their ability until dusk.",
 			]
 		]
 	],
@@ -538,5 +591,7 @@
 		"Minions know who you are.",
 		"[1 Minion is good and does not learn who is evil.]",
 		"Minions & Demons do not know each other.",
+		"A 50% majority isn't required for votes to pass.",
+		"You are sober and healthy.",
 	],
 };
