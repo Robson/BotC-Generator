@@ -127,7 +127,7 @@
 		"On your 1st night,",
 		"Each night,",
 		"Each night,",
-		"On you 1st night,",
+		"On your 1st night,",
 		"The 1st time you are executed,",
 		"Each night*,",
 		"Each night,",
