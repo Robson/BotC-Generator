@@ -194,6 +194,18 @@
 				"they register as evil until tomorrow day.",
 			]
 		],
+		[ // double-choice
+			[ // double-choice-power
+				"choose 2 alive players (not yourself):",
+				"choose 2 players (not yourself):",
+				"choose 2 players:",
+				"you may choose 2 players (not yourself):",
+				"you may choose 2 players:",
+			],
+			[ // double-choice-effect
+				"tomorrow, the 1st player is mad that the 2nd is evil, or both might die.",
+			]
+		],
 		[ // conditional
 			[ // conditional-power
 				"choose a player (all players know if you choose a new player). If you nominate and execute them,",

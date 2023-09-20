@@ -396,6 +396,19 @@
 				"you learn if they are the same alignment as your last choice.",
 			]
 		],
+		[ // double-choice
+			[ // double-choice-power
+				"choose 2 alive players (not yourself):",
+				"choose 2 players (not yourself):",
+				"choose 2 players:",
+				"you may choose 2 players (not yourself):",
+				"you may choose 2 players:",
+			],
+			[ // double-choice-effect
+				"you learn if they are the same alignment.",
+				"you learn if they are the same type.",
+			]
+		],
 		[ // conditional
 			[ // conditional-power
 				"choose a dead player: if they are a Townsfolk,",
