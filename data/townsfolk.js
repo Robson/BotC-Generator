@@ -403,10 +403,28 @@
 				"choose 2 players:",
 				"you may choose 2 players (not yourself):",
 				"you may choose 2 players:",
+				"choose 2 alive players (not yourself):"
+				"choose 2 players:"
+				"choose 2 players:"
+				"choose 3 players:
+				"choose 4 players:"
+				"choose up to 2 players:"
+				"choose up to 2 players:"
+				"choose up to 3 players:"
+				"choose up to 4 players:"
+				"publicly choose 2 players:"
+				"you may choose up to 2 players:"
 			],
 			[ // double-choice-effect
 				"you learn if they are the same alignment.",
 				"you learn if they are the same type.",
+				"if they all die, you learn their characters (but not which is which).",
+				"they can't die tonight, but 1 is drunk until dusk.",
+				"you learn how many woke tonight due to their ability.",
+				"tonight, they register as a chosen good character.",
+				"learn how many of each character type are among those players",
+				"they are drunk for 2 days and nights, but you can't use your power tomorrow night.",
+				"they can't die tonight. You may choose yourself (once).",
 			]
 		],
 		[ // conditional
