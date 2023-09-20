@@ -204,8 +204,8 @@
 		"The Demon knows who you are & who you choose at night.",
 		"You might register as evil & as a Minion or Demon, even if dead.",
 		"[+0 or +1 Outsider]",
-		"You keep your ability, even if dead."
-		"Minions know who you are."
+		"You keep your ability, even if dead.",
+		"Minions know who you are.",
 	],
 
 };

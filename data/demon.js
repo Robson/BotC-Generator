@@ -211,7 +211,7 @@
 		"The 1st time you die, you live but register as dead.",
 		"Your 2 Townsfolk neighbors are poisoned",
 		"Minions you kill keep their ability & poison 1 Townsfolk neighbor.",
-		"Townsfolk abilities yield false info."
+		"Townsfolk abilities yield false info.",
 		"[-1 Minion and +1 Outsider]",
 		"[-1 Outsider]",
 		"[+1 or -1 Outsider]",
