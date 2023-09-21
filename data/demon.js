@@ -3,19 +3,14 @@
 
 	adjective:
 	[
-		"Al-",
-		"Fang",
 		"Impious",
 		"Undead",
 		"Behemoth",
-		"Lil'",
 		"Ravenous",
-		"No",
 		"The",
 		"Forked",
 		"Eldritch",
 		"Vengeful",
-		"Vigor",
 		"Twisted",
 		"Necro",
 		"Nightmare",
@@ -48,21 +43,7 @@
 
 	noun:
 	[
-		"Hadikhia",
-		"Gu",
-		"Imp",
-		"Legion",
-		"Leviathan",
 		"Monsta",
-		"Lleech",
-		"Dashii",
-		"Po",
-		"Pukka",
-		"Shabaloth",
-		"Riot",
-		"Mortis",
-		"Vortox",
-		"Zombuul",
 		"Ix",
 		"Loa",
 		"Onryo",
@@ -138,7 +119,7 @@
 				"choose a player:",
 				"guess up to 4 player's characters. For any that you get correct (up to 3):",
 				"you may publically choose a player:",
-				"choosing a living player:",
+				"choose a living player:",
 			],
 			[ // choice-effect
 				"each silently chooses to live or die, but if all live, all die.",
