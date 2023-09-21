@@ -162,6 +162,7 @@
 				addRowsForRole( 4, 'Minion', 'Minions');
 				addRowsForRole( 4, 'Demon', 'Demons');
 				fullScript = fullScript.sort((a, b) => a.description > b.description);
+				fullScript = fullScript.sort((a, b) => a.role.length < b.role.length);
 				outputScript();
 			}
 
@@ -232,7 +233,6 @@
 				d3.select('#script').append('h2').html(scriptName).append('span').attr('id', 'version').html('v1.' + version);
 				var script = d3.select('#script').append('table');
 				var previousRole = '';
-				fullScript = fullScript.sort((a, b) => a.role.length < b.role.length);
 				for (var index in fullScript) {
 					var line = fullScript[index];
 					if (line.role != previousRole) {
@@ -253,6 +253,7 @@
 
 			function copyScript() {
 				fullScript = fullScript.sort((a, b) => a.description > b.description);
+				fullScript = fullScript.sort((a, b) => a.role.length < b.role.length);
 				outputScript();
 
 				var output = '== ' + scriptName + ' v1.' + version + ' ==\r\n';
