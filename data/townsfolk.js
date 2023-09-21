@@ -452,17 +452,17 @@
 				"choose 2 players:",
 				"you may choose 2 players (not yourself):",
 				"you may choose 2 players:",
-				"choose 2 alive players (not yourself):"
-				"choose 2 players:"
-				"choose 2 players:"
-				"choose 3 players:
-				"choose 4 players:"
-				"choose up to 2 players:"
-				"choose up to 2 players:"
-				"choose up to 3 players:"
-				"choose up to 4 players:"
-				"publicly choose 2 players:"
-				"you may choose up to 2 players:"
+				"choose 2 alive players (not yourself):",
+				"choose 2 players:",
+				"choose 2 players:",
+				"choose 3 players:",
+				"choose 4 players:",
+				"choose up to 2 players:",
+				"choose up to 2 players:",
+				"choose up to 3 players:",
+				"choose up to 4 players:",
+				"publicly choose 2 players:",
+				"you may choose up to 2 players:",
 				"you may choose an alive neighbor. If your other alive neighbor agrees,",
 				"you may choose up to 3 sets of 2 players:",
 			],
@@ -529,7 +529,7 @@
 				"you must use a vote token to vote. If a dead player gives you theirs,","if a player of your alignment is executed,",
 				"if another player nominated,",
 				"if you were funny today,",
-				"you must use a vote token to vote. If a dead player gives you theirs,",				
+				"you must use a vote token to vote. If a dead player gives you theirs,",
 			],
 			[ // conditional-effect
 				"a Demon dies.",
