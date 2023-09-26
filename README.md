@@ -14,8 +14,6 @@ A random character/script generator for the game _Blood on the Clocktower_.
 
 The data is by Drew ([Reddit](https://www.reddit.com/user/DrewHancock), [GitHub](https://github.com/TheDrewHancock)).
 
-This is a very early version of the tool and will have lots of problems.
-
 Not affiliated with or endorsed by The Pandemonium Institute. 
 
 ## Live Version
