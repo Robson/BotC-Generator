@@ -190,7 +190,7 @@
 				"a living neighbor of a dead Minion becomes this Demon.",
 				"an evil player dies. Otherwise, a good player dies.",
 				"evil wins.",
-				"the most recent nominee dies but can nominate again immediately (on day 3, they must).",
+				"the most recent nominee dies but can nominate again immediately (on day {2;3;4}, they must).",
 			]
 		]
 	],
