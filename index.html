@@ -202,9 +202,20 @@
 				var name = '', description = '';
 				do {
 					name = createName(library);
-					description = simplifyDescription(createDescription(library));
+					description = resolveRandomText(simplifyDescription(createDescription(library)));
 				} while (hasDuplication(name, description, fullScript) || hasDuplication(name, description, existing));
 				return { name: name, description: description };
+			}
+
+			function resolveRandomText(text) {
+				while (text.includes('{') && text.includes('}')) {
+					var start = text.indexOf('{');
+					var end = text.indexOf('}');
+					var potentialItems = text.substr(start+1, (end-start)-1).split(';');
+					var chosenItem = randomItemFromArray(potentialItems);
+					text = text.substr(0, start) + chosenItem + text.substr(end+1, text.length);
+				}
+				return text;
 			}
 
 			function addRowsForRole(amount, role, title) {
