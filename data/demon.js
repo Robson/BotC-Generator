@@ -1,4 +1,4 @@
-﻿var demon =
+var demon =
 {
 
 	adjective:
@@ -113,8 +113,8 @@
 	[
 		[ // choice
 			[ // choice-power
-				"choose 2 players:",
-				"choose 3 players (all players learn who):",
+				"choose {2;2;2;3;3;4} players:",
+				"choose {2;3;3;4} players (all players learn who):",
 				"choose a player:",
 				"choose a player:",
 				"choose a player:",
@@ -126,9 +126,9 @@
 				"the Storyteller chooses a player:",
 				"you may choose a player. If your last choice was no-one, choose 3 players tonight. After choosing,",
 				"choose 1 good player & 1 living Minion (if able):",
-				"choose 1 or 2 players:",
+				"choose {1 or 2;1 or 2;2 or 3;1 to 3} players:",
 				"choose a character:",
-				"choose a player who voted today:",
+				"choose a player who {voted;did not vote} today:",
 				"choose a player:",
 				"choose a player:",
 				"choose a player:",
@@ -139,14 +139,14 @@
 				"choose a player:",
 				"choose a player:",
 				"choose a player:",
-				"guess up to 4 player's characters. For any that you get correct (up to 3):",
+				"guess up to {2;3;4;4} player's characters. For any that you get correct (up to 3):",
 				"you may publically choose a player:",
 				"choose a living player:",
 			],
 			[ // choice-effect
 				"each silently chooses to live or die, but if all live, all die.",
 				"they are poisoned. The previously chosen player(s) die then become healthy.",
-				"they die, and one of their living neighbors might die.",
+				"they die, and one of their living neighbors {might die;dies}.",
 				"they die, even if for some reason they could not.",
 				"they die. If you choose yourself this way, a Minion dies instead.",
 				"they die. They might become an evil Minion & learn who you are.",
@@ -177,11 +177,11 @@
 		],
 		[ // conditional
 			[ // conditional-power
-				"a player might die. If only Evil voted,",
+				"a player might die. If {only Evil;all Good players} voted,",
 				"if more than 1 good player is executed,",
-				"If 5 or more players are alive and an evil player is executed,",
-				"if a good player died yesterday,",
-				"if no-one dies by execution,",
+				"If 5 or more players are alive and {an evil;a good} player is executed,",
+				"if {a good;an evil} player died yesterday,",
+				"if no-one died by execution today,",
 				"if someone makes a nomination,",
 			],
 			[ // conditional-effect
@@ -205,12 +205,11 @@
 		"[All minions are Demons]",
 		"[Most players are Demons]",
 		"A dead player you chose last night might be regurgitated.",
-		"After day 3, evil wins.",
-		"After day 5, evil wins.",
+		"After day {2;3;3;3;4;4;5;5;5;6}, evil wins.",
 		"All players know you are in play.",
 		"Each day, if no-one is executed, evil wins.",
 		"If you kill yourself, a Minion becomes your Demon.",
-		"The 1st Outsider this kills becomes your Demon & you die instead.",
+		"The {1st;1st;2nd} Outsider this kills becomes your Demon & you die instead.",
 		"The 1st time you die, you live but register as dead.",
 		"Your 2 Townsfolk neighbors are poisoned",
 		"Minions you kill keep their ability & poison 1 Townsfolk neighbor.",
@@ -224,14 +223,14 @@
 		"All players know who you are. You die if (& only if) all your minions die.",
 		"Each day, if no-one was executed, a player becomes an Outsider or an evil Minion.",
 		"Each night you choose 1 Minion who gets to kill again.",
-		"Each night you learn the characters of your good neighbors.",
-		"Every other night you learn a living player and their character.",
+		"Each night you learn the characters of your {living;good;Townsfolk} neighbors.",
+		"Every other night you learn a {living;good;Townsfolk} player and their character.",
 		"Minions are good & Townsfolk are evil, but do not know it.",
 		"Minions know the demon bluffs.",
-		"On your 1st night you may look at the Grimoire.",
+		"On your {1st;1st;2nd} night you may look at the Grimoire.",
 		"On your 1st night, choose as many players as there should be Minions. They become evil and learn who you are. [No Minions]",
 		"Players who nominate you die at night.",
-		"The 1st time you kill an Outsider, 1 of their living good neighbors dies too.",
+		"The {1st;1st;2nd} time you kill an Outsider, {1;1;2} of their living good neighbors dies too.",
 		"You do not receive bluffs.",
 		"Your ability malfunctions if another Demon chooses a different player. 1 Minion is also your Demon.",
 		"Your power works even if you are dead.",
