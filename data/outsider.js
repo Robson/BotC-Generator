@@ -127,10 +127,10 @@
 		[ // standard
 			[ // standard-power
 				"you might die.",
-				"Minions learn 3 not-in-play characters.",
+				"Minions learn {1;2;2;3;3;3;4} not-in-play characters.",
 				"if you die you become evil. If you are alive you become good.",
 				"the 1st time an evil player is executed, you die instead. 1 or 2 players register as an opposite alignment to you.",
-				"you cannot vote, even if dead.",
+				"you cannot {vote;vote or nominate}, even if dead.",
 				"you might die or be resurrected.",
 			]
 		],
@@ -138,22 +138,21 @@
 			[ // conditional-power
 				"1 player is drunk, even if you die. If you guess (once) wrong get false info, but guess who it is and",
 				"if a Minion publicly guesses you (once),",
-				"if either good living neighbor is drunk or poisoned,",
+				"if either {good;Townsfolk;evil} living neighbor is {drunk;poisoned;drunk or poisoned},",
 				"if you are \"mad\" about being an Outsider,",
 				"if you are the player most responsible for your team losing,",
-				"if you die by execution,",
+				"if you die {by execution;at night;from being killed by the Demon},",
 				"if you die,",
 				"if you died last night or yesterday,",
-				"when you die,",
 				"when you learn that you died, publicly choose 1 alive player: if they are evil,",
 				"choose a player (not yourself). Tomorrow, if, and only if, they are voting,",
 				"the first player to choose you with their ability is drunk until dusk. If they were a different alignment,",
-				"you may nominate (once per game). When you do, if the nominee is not the Demon,",
+				"you may nominate (once per game). When you do, if the nominee is not {the Demon;a Minion;evil;good;a Townsfolk},",
 				"When you learn that you died,",
-				"a living player becomes your character. If 3 of your character are dead,",
+				"a living player becomes your character. If {2;3;3;4} of your character are dead,",
 				"if a player nominates you,",
-				"if no-one is executed,",
-				"if only 3 players live,",
+				"if no-one was executed,",
+				"if only {5;4;4;3;3;3} players live,",
 				"if you are \"mad\" about an objectively true statement,",
 				"if you are executed,",
 				"if you are not \"mad\" that you are having fun,",
@@ -162,11 +161,11 @@
 				"if you laugh,",
 				"you can't die. If you speak, write, type, or draw using any medium,",
 				"you cannot die at night. If you are executed,",
-				"you learn 3 players, one of which is the Demon. If you are not mad that a new player is the Demon each day,",
+				"you learn {2;3;3;4} players, one of which is the Demon. If you are not mad that a new player is the Demon each day,",
 			],
 			[ // conditional-effect
 				"1 player is drunk from now on.",
-				"learn the Demon player.",
+				"learn the {Demon player;Minion players}.",
 				"the Demon may choose 2 players (not another Demon) to swap characters",
 				"the Storyteller gains a not-in-play Minion ability",
 				"you change alignment & win, even if dead.",
@@ -180,7 +179,7 @@
 				"the most recently nominated player dies.",
 				"publicly choose 1 alive player. Tonight, if it was a good player, they die.",
 				"a player becomes an evil Demon. A Demon becomes a good Lunatic.",
-				"all good players are drunk until tomorrow day.",
+				"all good players are drunk until {tomorrow day;dusk}.",
 				"everyone loses.",
 				"good loses.",
 				"the player that most recently nominated you dies and you change alignments.",
@@ -200,12 +199,11 @@
 
 	extraEffects:
 	[
-		"All Minions know you are in play",
+		"{All Minions know;The Demon knows;a good player knows} you are in play",
 		"The Demon knows who you are & who you choose at night.",
 		"You might register as evil & as a Minion or Demon, even if dead.",
 		"[+0 or +1 Outsider]",
 		"You keep your ability, even if dead.",
-		"Minions know who you are.",
 	],
 
 };
