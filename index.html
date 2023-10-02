@@ -94,7 +94,7 @@
 			function createCharacter(role) {
 				var library = getLibraryForRole(role);
 				var name = createName(library);
-				var description = createDescription(library);
+				var description = resolveRandomText(createDescription(library));
 				character = name + ': ' + simplifyDescription(description);
 
 				d3.select('#name').html(name);
