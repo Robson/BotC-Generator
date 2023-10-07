@@ -40,6 +40,7 @@
 		"Forlorn",
 		"Gutter",
 		"Chicken",
+		"Sleepy",
 	],
 
 	noun:
@@ -81,6 +82,7 @@
 		"Friar",
 		"Pilgrim",
 		"Buffoon",
+		"Sleepwalker",
 	],
 
 	frequency:
@@ -162,12 +164,13 @@
 				"you can't die. If you speak, write, type, or draw using any medium,",
 				"you cannot die at night. If you are executed,",
 				"you learn {2;3;3;4} players, one of which is the Demon. If you are not mad that a new player is the Demon each day,",
+				"if a Townsfolk would wake to receive information,",
 			],
 			[ // conditional-effect
 				"1 player is drunk from now on.",
 				"learn the {Demon player;Minion players}.",
-				"the Demon may choose 2 players (not another Demon) to swap characters",
-				"the Storyteller gains a not-in-play Minion ability",
+				"the Demon may choose 2 players (not another Demon) to swap characters.",
+				"the Storyteller gains a not-in-play Minion ability.",
 				"you change alignment & win, even if dead.",
 				"you die.",
 				"you might be executed.",
@@ -191,6 +194,7 @@
 				"you might be executed.",
 				"your team loses.",
 				"your team loses.",
+				"a waking Townsfolk might learn that your character is in play, then go back to sleep without using their power.",
 			]
 		]
 	],
