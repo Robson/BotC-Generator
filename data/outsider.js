@@ -1,4 +1,4 @@
-﻿var outsider =
+var outsider =
 {
 
 	adjective:
@@ -131,7 +131,7 @@
 			[ // standard-power
 				"you might die.",
 				"Minions learn {1;2;2;3;3;3;4} not-in-play characters.",
-				"if you die you become evil. If you are alive you become good.",
+				"if you die you become evil. If you are resurrected you become good.",
 				"the 1st time an evil player is executed, you die instead. 1 or 2 players register as an opposite alignment to you.",
 				"you cannot {vote;vote or nominate}, even if dead.",
 				"you might die or be resurrected.",
@@ -180,7 +180,7 @@
 				"your team loses.",
 				"your team loses.",
 				"your team loses.",
-				"you may vote on executions.",
+				"you may vote on executions. Otherwise, you cannot.",
 				"you change alignment.",
 				"the most recently nominated player dies.",
 				"publicly choose 1 alive player. Tonight, if it was a good player, they die.",
