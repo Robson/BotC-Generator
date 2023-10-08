@@ -122,6 +122,7 @@
 		"Each day,",
 		"Each day and night,",
 		"Each day and night,",
+		"Each night*,",
 	],
 
 	styles:
@@ -165,6 +166,8 @@
 				"you cannot die at night. If you are executed,",
 				"you learn {2;3;3;4} players, one of which is the Demon. If you are not mad that a new player is the Demon each day,",
 				"if a Townsfolk would wake to receive information,",
+				"choose a living player (different from last night) and guess their alignment. If you guess correctly, the Demon attacks that player instead of their target. If the Demon is killed in this way,",
+				"you might register as evil and as a Minion. You think you are the Saint, but you are not. If only {3;3;3;4;4;5} players are alive,",
 			],
 			[ // conditional-effect
 				"1 player is drunk from now on.",
@@ -195,6 +198,8 @@
 				"your team loses.",
 				"your team loses.",
 				"a waking Townsfolk might learn that your character is in play, then go back to sleep without using their power.",
+				"the Demon dies and you become the new Demon.",
+				"good loses."
 			]
 		]
 	],
