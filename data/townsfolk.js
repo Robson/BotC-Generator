@@ -173,6 +173,9 @@
 		"Slinger",
 		"Thief",
 		"Voudon",
+		"Channeler",
+		"Whisperer",
+		"Medium",
 	],
 
 	frequency:
@@ -299,6 +302,9 @@
 		"Once per day,",
 		"Once per game,",
 		"Once per game, at night,",
+		"Once per game, at night,",
+		"Twice per game, at night,",
+		"Once per game, during the day,",
 	],
 
 	styles:
@@ -345,6 +351,10 @@
 				"only the Storyteller can nominate. At least 1 opposing player must be nominated each day.",
 				"only you & the dead can vote. They don't need a vote token to do so.",
 				"you gain a Townsfolk ability or a Minion ability.",
+				"you learn {2;3;3;4} players, exactly {1;1;2} whom the Storyteller thinks would choose to die.",
+				"you learn if only evil voted on any of yesterday's nominations.",
+				"you may choose to make your two living neighbors sober and healthy.",
+				"you learn {1;2;2;3;3;3} out of play characters.",
 			]
 		],
 		[ // choice
@@ -393,6 +403,10 @@
 				"choose a player (not yourself):",
 				"choose a player (not yourself):",
 				"the Storyteller chooses a player:",
+				"choose a player (not yourself):",
+				"choose a player:",
+				"choose a player:",
+				"choose a living player:",
 			],
 			[ // choice-effect
 				"a chosen {Demon;Minion} swaps characters & alignments with you & is then poisoned.",
@@ -433,6 +447,10 @@
 				"they become sober, healthy & get true info, or 2) their ability works twice. They learn which.",
 				"they die.",
 				"they regain their ability until dusk.",
+				"they are drunk until dusk. The next time they would successfully use their ability, they use it twice.",
+				"their abilities yield false information until dusk.",
+				"they may use their ability until dusk, even if dead."
+				"chosen Minions swap characters with the Demon."
 			]
 		],
 		[ // double-choice
@@ -520,6 +538,8 @@
 				"if another player nominated,",
 				"if you were funny today,",
 				"you must use a vote token to vote. If a dead player gives you theirs,",
+				"if you nominate and execute an Outsider,",
+				"you may publicly guess all evil players. If all evil were named and no good players,",
 			],
 			[ // conditional-effect
 				"a Demon dies.",
@@ -563,6 +583,8 @@
 				"you learn the alignment of the last player that interacted with you.",
 				"you may choose to force the current (or next if one isn't current) execution to pass or fail.",
 				"you might be executed instead of the current executee.",
+				"you die and the most recent executee lives and becomes a not-in-play Townsfolk.",
+				"good wins.",
 			]
 		]
 	],
@@ -594,5 +616,6 @@
 		"Minions & Demons do not know each other.",
 		"A 50% majority isn't required for votes to pass.",
 		"You are sober and healthy.",
+		"Townsfolk abilities yield false information."
 	],
 };
