@@ -44,6 +44,7 @@ var demon =
 		"Formless",
 		"Beautiful",
 		"Radiant",
+		"Fallen",
 	],
 
 	noun:
@@ -89,6 +90,9 @@ var demon =
 		"Rakshasa",
 		"Vetala",
 		"Hundun",
+		"Unseelie",
+		"Myrr Um",
+		"Angel",
 	],
 
 	frequency:
@@ -183,6 +187,7 @@ var demon =
 				"if {a good;an evil} player died yesterday,",
 				"if no-one died by execution today,",
 				"if someone makes a nomination,",
+				"choose a player, they die. Once per game, at dusk, you may publicly guess the roles of all players. If all guesses are correct,"
 			],
 			[ // conditional-effect
 				"evil wins.",
@@ -191,6 +196,7 @@ var demon =
 				"an evil player dies. Otherwise, a good player dies.",
 				"evil wins.",
 				"the most recent nominee dies but can nominate again immediately (on day {2;3;4}, they must).",
+				"evil wins."
 			]
 		]
 	],
@@ -234,6 +240,9 @@ var demon =
 		"You do not receive bluffs.",
 		"Your ability malfunctions if another Demon chooses a different player. 1 Minion is also your Demon.",
 		"Your power works even if you are dead.",
+		"You receive 1 less bluff.",
+		"Each day, the 1st {player;Townsfolk;good player} to nominate is poisoned until dawn.",
+		"You start by choosing a player (not yourself). They are safe from the Demon. When they die, choose a new player.",
 	],
 
 };
