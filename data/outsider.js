@@ -163,7 +163,7 @@ var outsider =
 				"if you died by execution,",
 				"if you laugh,",
 				"you can't die. If you speak, write, type, or draw using any medium,",
-				"you cannot die at night. If you are executed,",
+				"you can't die. If you are executed,",
 				"you learn {2;3;3;4} players, one of which is the Demon. If you are not mad that a new player is the Demon each day,",
 				"if a Townsfolk would wake to receive information,",
 				"choose a living player (different from last night) and guess their alignment. If you guess correctly, the Demon attacks that player instead of their target. If the Demon is killed in this way,",
