@@ -172,6 +172,7 @@
 		"Once per day,",
 		"Once per game,",
 		"Once per game, at night,",
+		"Each night*,",
 	],
 
 	styles:
@@ -291,6 +292,7 @@
 				"if another player {nominated;is executed},",
 				"if you were funny today,",
 				"you must use a vote token to vote. If a dead player gives you theirs,",
+				"choose a player. If all living players (not yourself or Travelers) have been chosen by you,",
 			],
 			[ // conditional-effect
 				"all but 3 players die. {1 minute;2 minutes;30 seconds} later, the player with the most players pointing at them dies.",
@@ -309,6 +311,7 @@
 				"they might die.",
 				"you & the Demon swap characters.",
 				"you die.",
+				"good wins.",
 			]
 		]
 	],
