@@ -449,7 +449,7 @@
 				"they regain their ability until dusk.",
 				"they are drunk until dusk. The next time they would successfully use their ability, they use it twice.",
 				"their abilities yield false information until dusk.",
-				"they may use their ability until dusk, even if dead."
+				"they may use their ability until dusk, even if dead.",
 				"chosen Minions swap characters with the Demon."
 			]
 		],
