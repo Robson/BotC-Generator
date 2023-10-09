@@ -176,6 +176,9 @@
 		"Channeler",
 		"Whisperer",
 		"Medium",
+		"Plumber",
+		"Matchmaker",
+		"Shoeshiner",
 	],
 
 	frequency:
@@ -305,6 +308,7 @@
 		"Once per game, at night,",
 		"Twice per game, at night,",
 		"Once per game, during the day,",
+		"On your 1st night,",
 	],
 
 	styles:
@@ -355,6 +359,9 @@
 				"you learn if only evil voted on any of yesterday's nominations.",
 				"you may choose to make your two living neighbors sober and healthy.",
 				"you learn {1;2;2;3;3;3} out of play characters.",
+				"you learn {2;2;2;3} players of the same alignment.",
+				"you learn how many players did not wake tonight.",
+				"you have the same ability as a player sat furthest away from you, but might not share alignment.",
 			]
 		],
 		[ // choice
@@ -407,6 +414,7 @@
 				"choose a player:",
 				"choose a player:",
 				"choose a living player:",
+				"choose a player,",
 			],
 			[ // choice-effect
 				"a chosen {Demon;Minion} swaps characters & alignments with you & is then poisoned.",
@@ -450,7 +458,9 @@
 				"they are drunk until dusk. The next time they would successfully use their ability, they use it twice.",
 				"their abilities yield false information until dusk.",
 				"they may use their ability until dusk, even if dead.",
-				"chosen Minions swap characters with the Demon."
+				"chosen Minions swap characters with the Demon.",
+				"you make all their character choices tonight.",
+				"guess their character, and make all its choices tonight. If correct, their choices become your choices.",
 			]
 		],
 		[ // double-choice
@@ -473,6 +483,7 @@
 				"you may choose up to 2 players:",
 				"you may choose an alive neighbor. If your other alive neighbor agrees,",
 				"you may choose up to 3 sets of 2 players:",
+				"choose 2 players:",
 			],
 			[ // double-choice-effect
 				"you learn if they are the same alignment.",
@@ -486,6 +497,7 @@
 				"they can't die tonight. You may choose yourself (once).",
 				"they die.",
 				"they swap seats. Players may not leave their seats to talk in private.",
+				"you learn when you have chosen {2;2;3} or more non-Townsfolk this game.",
 			]
 		],
 		[ // conditional
@@ -540,6 +552,8 @@
 				"you must use a vote token to vote. If a dead player gives you theirs,",
 				"if you nominate and execute an Outsider,",
 				"you may publicly guess all evil players. If all evil were named and no good players,",
+				"choose a role. If that role is a Demon bluff,",
+				"if a non-demon targets you,"
 			],
 			[ // conditional-effect
 				"a Demon dies.",
@@ -585,6 +599,8 @@
 				"you might be executed instead of the current executee.",
 				"you die and the most recent executee lives and becomes a not-in-play Townsfolk.",
 				"good wins.",
+				"you become the Demon's target tonight.",
+				"the most recent player to target you targets themselves, instead.",
 			]
 		]
 	],
@@ -616,6 +632,7 @@
 		"Minions & Demons do not know each other.",
 		"A 50% majority isn't required for votes to pass.",
 		"You are sober and healthy.",
-		"Townsfolk abilities yield false information."
+		"Townsfolk abilities yield false information.",
+		"2/3rds of the town must vote yes for you to be executed.",
 	],
 };
