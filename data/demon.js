@@ -93,11 +93,13 @@ var demon =
 		"Unseelie",
 		"Myrr Um",
 		"Angel",
+		"Etherspring",
 	],
 
 	frequency:
 	[
 		"Each day,",
+		"Each night,",
 		"Each night,",
 		"Each night,",
 		"Each night*,",
@@ -187,7 +189,8 @@ var demon =
 				"if {a good;an evil} player died yesterday,",
 				"if no-one died by execution today,",
 				"if someone makes a nomination,",
-				"choose a player, they die. Once per game, at dusk, you may publicly guess the roles of all players. If all guesses are correct,"
+				"choose a player: they die. Once per game, at dusk, you may publicly guess the roles of all players. If all guesses are correct,",
+				"choose a player: they are poisoned. When the poisoned outnumber the healthy,",
 			],
 			[ // conditional-effect
 				"evil wins.",
@@ -196,7 +199,8 @@ var demon =
 				"an evil player dies. Otherwise, a good player dies.",
 				"evil wins.",
 				"the most recent nominee dies but can nominate again immediately (on day {2;3;4}, they must).",
-				"evil wins."
+				"evil wins.",
+				"all but {3;3;4} players die.",
 			]
 		]
 	],
