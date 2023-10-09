@@ -50,6 +50,8 @@
 		"Bone",
 		"Deviant",
 		"Gun",
+		"Head",
+		"Sleeper",
 	],
 
 	noun:
@@ -111,6 +113,9 @@
 		"Slinger",
 		"Thief",
 		"Voudon",
+		"Kidnapper",
+		"Hydra",
+		"Agent",
 	],
 
 	frequency:
@@ -173,6 +178,8 @@
 		"Once per game,",
 		"Once per game, at night,",
 		"Each night*,",
+		"Each day,",
+		"On your 1st night,",
 	],
 
 	styles:
@@ -221,6 +228,8 @@
 				"choose a player (not yourself):",
 				"choose a player (not yourself):",
 				"the Storyteller chooses a player:",
+				"choose a living player (not a previously chosen player), if possible:",
+				"you and all other Minions choose a player. If a majority is reached,",
 			],
 			[ // choice-effect
 				"if executed tomorrow, they don't die.",
@@ -248,6 +257,8 @@
 				"they become sober, healthy & get true info, or 2) their ability works twice. They learn which.",
 				"they die.",
 				"they regain their ability until dusk.",
+				"they must stay with you during private discussions. Once per game, at the start of nominations, you may kill your previous choice.",
+				"they die.",
 			]
 		],
 		[ // double-choice
@@ -293,6 +304,7 @@
 				"if you were funny today,",
 				"you must use a vote token to vote. If a dead player gives you theirs,",
 				"choose a player. If all living players (not yourself or Travelers) have been chosen by you,",
+				"you learn a secret word. When a good player says the word, you learn a new word and",
 			],
 			[ // conditional-effect
 				"all but 3 players die. {1 minute;2 minutes;30 seconds} later, the player with the most players pointing at them dies.",
@@ -312,6 +324,7 @@
 				"you & the Demon swap characters.",
 				"you die.",
 				"good wins.",
+				"choose a player tonight: they die.",
 			]
 		]
 	],
@@ -332,6 +345,7 @@
 		"[+1 Minion]",
 		"You are safe from the Demon.",
 		"You might register as a Demon.",
+		"All players know who you are. You can not die during the day.",
 	],
 
 };
