@@ -41,6 +41,8 @@ var outsider =
 		"Gutter",
 		"Chicken",
 		"Sleepy",
+		"Conspiracy",
+		"Shifty",
 	],
 
 	noun:
@@ -83,6 +85,8 @@ var outsider =
 		"Pilgrim",
 		"Buffoon",
 		"Sleepwalker",
+		"Theorist",
+		"Proteus",
 	],
 
 	frequency:
@@ -135,6 +139,7 @@ var outsider =
 				"the 1st time an evil player is executed, you die instead. 1 or 2 players register as an opposite alignment to you.",
 				"you cannot {vote;vote or nominate}, even if dead.",
 				"you might die or be resurrected.",
+				"you change alignment. You might start as evil.",
 			]
 		],
 		[ // conditional
