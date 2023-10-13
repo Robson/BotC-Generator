@@ -85,6 +85,7 @@ var outsider =
 		"Pallid",
 		"Burnt",
 		"Infected",
+		"Renegade",
 	],
 
 	noun:
@@ -150,6 +151,9 @@ var outsider =
 		"Drifter",
 		"\"Human\"",
 		"Leper",
+		"Rat",
+		"Renegade",
+		"Chameleon",
 	],
 
 	frequency:
@@ -191,6 +195,7 @@ var outsider =
 		"Each day and night,",
 		"Each night*,",
 		"Each night,",
+		"Each night*,",
 	],
 
 	styles:
@@ -252,6 +257,11 @@ var outsider =
 				"choose a living player (not yourself): if they die tonight,",
 				"choose a living player (not yourself): if they woke tonight due to their ability,",
 				"you and a living Townsfolk know each other and what character you are. If one of you is not mad about being your character,",
+				"you may choose to change alignment. If you do,",
+				"if you are nominated by a good player and executed,",
+				"as long as one living neighbor is Evil, you are as well. If you are evil,",
+				"choose a player (no duplicates if possible): they become your character. If you choose another of your character,"
+				"choose a player: you become their opposite alignment. Tomorrow you learn one true statement about them, and",
 			],
 			[ // conditional-effect
 				"1 player is drunk from now on.",
@@ -292,6 +302,10 @@ var outsider =
 				"you might be executed. Any other player who is \"mad\" that they are your character might survive execution.",
 				"you might be executed tomorrow.",
 				"you might die tonight.",
+				"you learn a living player on your team.",
+				"you turn evil.",
+				"you cannot die.",
+				"either you or a previous choice might die.",
 			]
 		]
 	],
@@ -311,6 +325,11 @@ var outsider =
 		"The evil team is immune to madness.",
 		"Evil players cannot become drunk.",
 		"You may not leave Town Square.",
+		"You believe that you are {an in-play Townsfolk;a not-in-play Townsfolk}. When you die, you learn your character.",
+		"You are neither good nor evil at the start of the game.",
+		"You are neither good nor evil at the start of the game. You win if the game ends with at least {4;4;4;5;5;6} players still living.",
+		"All players know you are in play.",
+		"One of your {good;living good} neighbors is not allowed to wake at night.",
 	],
 
 };
