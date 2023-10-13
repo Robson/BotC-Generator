@@ -85,7 +85,6 @@ var outsider =
 		"Pallid",
 		"Burnt",
 		"Infected",
-		
 	],
 
 	noun:
@@ -149,7 +148,7 @@ var outsider =
 		"Vagrant",
 		"Wretch",
 		"Drifter",
-		"\"Human\""
+		"\"Human\"",
 		"Leper",
 	],
 
@@ -249,9 +248,9 @@ var outsider =
 				"you learn a secret word. If another players speaks that word,",
 				"if a player speaks your preferred name,",
 				"learn a player. If they nominate and execute themselves,",
-				"if you are not \"mad\" that you are your character,"
-				"choose a living player (not yourself): if they die tonight,"
-				"choose a living player (not yourself): if they woke tonight due to their ability,"
+				"if you are not \"mad\" that you are your character,",
+				"choose a living player (not yourself): if they die tonight,",
+				"choose a living player (not yourself): if they woke tonight due to their ability,",
 				"you and a living Townsfolk know each other and what character you are. If one of you is not mad about being your character,",
 			],
 			[ // conditional-effect
