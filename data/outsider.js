@@ -199,6 +199,7 @@ var outsider =
 		"Each night*,",
 		"Once per game,",
 		"Each day, after nominations,",
+		"The 1st time you are nominated but not executed,",
 	],
 
 	styles:
@@ -266,6 +267,7 @@ var outsider =
 				"as long as one living neighbor is Evil, you are as well. If you are evil,",
 				"choose a player (no duplicates if possible): they become your character. If you choose another of your character,"
 				"choose a player: you become their opposite alignment. Tomorrow you learn one true statement about them, and",
+				"{all living players;all players;your 2 neighbors} roll a {d20;d12;d6}. If any roll {higher than;lower than;the same as} you,",
 			],
 			[ // conditional-effect
 				"1 player is drunk from now on.",
@@ -303,13 +305,14 @@ var outsider =
 				"you change alignments.",
 				"you learn all evil characters in play and turn evil.",
 				"a dead {evil player;Minion} regains their power for {1 night.;2 nights.;1 day and night.;2 days and nights.;the rest of the game.}",
-				"you might be executed. Any other player who is \"mad\" that they are your character might survive execution.",
+				"you might {die;be executed}. Any other player who is \"mad\" that they are your character might survive execution.",
 				"you might be executed tomorrow.",
 				"you might die tonight.",
-				"you learn a living player on your team.",
+				"you learn a {living;dead} player on your team.",
 				"you turn evil.",
-				"you cannot die.",
-				"either you or a previous choice might die.",
+				"you cannot {die;be executed}.",
+				"either you or a previous choice might {die;be executed;become drunk tonight}.",
+				"you or one of your living neighbors might {be executed;die;become drunk until tomorrow}."
 			]
 		]
 	],
@@ -334,6 +337,8 @@ var outsider =
 		"You are neither good nor evil at the start of the game. You win if the game ends with at least {4;4;4;5;5;6} players still living.",
 		"All players know you are in play.",
 		"One of your {good;living good} neighbors is not allowed to wake at night.",
+		"Your team cannot win.",
+		"If your team wins, they lose instead.",
 	],
 
 };
