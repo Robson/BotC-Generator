@@ -154,6 +154,7 @@ var outsider =
 		"Rat",
 		"Renegade",
 		"Chameleon",
+		"Crapshooter",
 	],
 
 	frequency:
@@ -196,6 +197,8 @@ var outsider =
 		"Each night*,",
 		"Each night,",
 		"Each night*,",
+		"Once per game,",
+		"Each day, after nominations,",
 	],
 
 	styles:
@@ -214,6 +217,7 @@ var outsider =
 				"a Townsfolk is drunk.",
 				"you cannot be executed. Players that {nominate;vote for;do not vote for} you might die.",
 				"the 1st {Townsfolk;Outsider;good player} to choose you with their ability becomes your character.",
+				"all living players roll a {d6;d6;d12;d20;d20}. Whoever rolls {the lowest;lower than you;the same as you} {dies;is executed;might be executed}.",
 			]
 		],
 		[ // conditional
