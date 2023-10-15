@@ -265,7 +265,7 @@ var outsider =
 				"you may choose to change alignment. If you do,",
 				"if you are nominated by a good player and executed,",
 				"as long as one living neighbor is Evil, you are as well. If you are evil,",
-				"choose a player (no duplicates if possible): they become your character. If you choose another of your character,"
+				"choose a player (no duplicates if possible): they become your character. If you choose another of your character,",
 				"choose a player: you become their opposite alignment. Tomorrow you learn one true statement about them, and",
 				"{all living players;all players;your 2 neighbors} roll a {d20;d12;d6}. If any roll {higher than;lower than;the same as} you,",
 			],
