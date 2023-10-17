@@ -86,6 +86,8 @@ var outsider =
 		"Burnt",
 		"Infected",
 		"Renegade",
+		"Truant",
+		"Star-Crossed",
 	],
 
 	noun:
@@ -155,6 +157,7 @@ var outsider =
 		"Renegade",
 		"Chameleon",
 		"Crapshooter",
+		"Lover",
 	],
 
 	frequency:
@@ -219,6 +222,7 @@ var outsider =
 				"you cannot be executed. Players that {nominate;vote for;do not vote for} you might die.",
 				"the 1st {Townsfolk;Outsider;good player} to choose you with their ability becomes your character.",
 				"all living players roll a {d6;d6;d12;d20;d20}. Whoever rolls {the lowest;lower than you;the same as you} {dies;is executed;might be executed}.",
+				"the Storyteller will show you up to two {off-script;not-in-play} Outsider characters. You may choose one to permanently transform into.",
 			]
 		],
 		[ // conditional
@@ -268,6 +272,8 @@ var outsider =
 				"choose a player (no duplicates if possible): they become your character. If you choose another of your character,",
 				"choose a player: you become their opposite alignment. Tomorrow you learn one true statement about them, and",
 				"{all living players;all players;your 2 neighbors} roll a {d20;d12;d6}. If any roll {higher than;lower than;the same as} you,",
+				"learn 1 in-play Townsfolk. If you die first, they are drunk from now on. If they die first,",
+				"if you die,",
 			],
 			[ // conditional-effect
 				"1 player is drunk from now on.",
@@ -313,6 +319,8 @@ var outsider =
 				"you cannot {die;be executed}.",
 				"either you or a previous choice might {die;be executed;become drunk tonight}.",
 				"you or one of your living neighbors might {be executed;die;become drunk until tomorrow}."
+				"you die.",
+				"you are resurrected tomorrow night.",
 			]
 		]
 	],
@@ -339,6 +347,7 @@ var outsider =
 		"One of your {good;living good} neighbors is not allowed to wake at night.",
 		"Your team cannot win.",
 		"If your team wins, they lose instead.",
+		"You think you are a Townsfolk, but you are not.",
 	],
 
 };
