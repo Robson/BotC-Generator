@@ -52,6 +52,13 @@
 		"Gun",
 		"Head",
 		"Sleeper",
+		"Slothful",
+		"Prideful",
+		"Envious",
+		"Gluttonous",
+		"Greedy",
+		"Wrathful",
+		"Soul",
 	],
 
 	noun:
@@ -118,6 +125,7 @@
 		"Agent",
 		"Necromancer",
 		"Parallax",
+		"Stitcher",
 	],
 
 	frequency:
@@ -198,6 +206,7 @@
 				"only you & the dead can vote. They don't need a vote token to do so.",
 				"you gain a Townsfolk ability or a Minion ability.",
 				"other Minions can't die.",
+				"the Storyteller will show you up to two {off-script;not-in-play} Minion characters. You may choose one to permanently transform into.",
 			]
 		],
 		[ // choice
@@ -285,6 +294,7 @@
 				"you may choose {an alive;a dead} neighbor. If an other {alive;dead} neighbor agrees,",
 				"you may choose up to {2;3} sets of 2 players:",
 				"choose {2;2;3} players...",
+				"choose {2;2;3} players:",
 			],
 			[ // double-choice-effect
 				"they die.",
@@ -299,6 +309,7 @@
 				"tomorrow, they are not allowed to have private chats with each other.",
 				"they must remain in {Town Square;their seats} tomorrow, or else might be executed.",
 				"they make each others' decisions tonight, but do not learn what each others' powers are.",
+				"they all die if any are executed tomorrow.",
 			]
 		],
 		[ // conditional
