@@ -107,10 +107,13 @@ var demon =
 		"Unknown",
 		"Frend",
 		"K'lr",
+		"Wrath",
+		"Pride",
 	],
 
 	frequency:
 	[
+		"Each day,",
 		"Each day,",
 		"Each night,",
 		"Each night,",
@@ -161,6 +164,8 @@ var demon =
 				"guess up to {2;3;4;4} player's characters. For any that you get correct (up to 3):",
 				"you may publically choose a player:",
 				"choose a living player:",
+				"choose a player:",
+				"you may choose a player:",
 			],
 			[ // choice-effect
 				"each silently chooses to live or die, but if all live, all die.",
@@ -191,6 +196,8 @@ var demon =
 				"they die.",
 				"they die.",
 				"they die.",
+				"they die.",
+				"if dead, they become evil and are resurrected (once per game). Swap characters with them.",
 				"they die.",
 			]
 		],
@@ -257,8 +264,12 @@ var demon =
 		"You do not receive bluffs.",
 		"Your ability malfunctions if another Demon chooses a different player. 1 Minion is also your Demon.",
 		"Your power works even if you are dead.",
+		"The Storyteller chooses one additional player. You decide whether they live or die. You do not know your Minions."
+		"You do not know your Minions."
 		"You receive 1 less bluff.",
 		"Each day, the 1st {player;Townsfolk;good player} to nominate is poisoned until dawn.",
+		"If you are executed while any evil Minions live, you live and the nominator dies instead.",
+		"You do not know who your Minions are, and all players know you are in play. You cannot die while any evil Minions live.",
 		"You start by choosing a player (not yourself). They are safe from the Demon. When they die, choose a new player.",
 	],
 
