@@ -80,6 +80,7 @@
 		"Bone",
 		"Deviant",
 		"Gun",
+		"Time",
 	],
 
 	noun:
@@ -179,6 +180,10 @@
 		"Plumber",
 		"Matchmaker",
 		"Shoeshiner",
+		"Keeper",
+		"Procrastinator",
+		"Healer",
+		"Physician",
 	],
 
 	frequency:
@@ -310,6 +315,7 @@
 		"Once per game, during the day,",
 		"On your 1st night,",
 		"Each night,",
+		"Each night*,",
 	],
 
 	styles:
@@ -364,6 +370,7 @@
 				"you learn how many players did not wake tonight.",
 				"you have the same ability as a player sat furthest away from you, but might not share alignment.",
 				"you learn the minimum number of days it would take for evil to win.",
+				"the Storyteller will show you two {off-script;not-in-play} Townsfolk characters. You may choose one to permanently transform into.",
 			]
 		],
 		[ // choice
@@ -416,7 +423,10 @@
 				"choose a player:",
 				"choose a player:",
 				"choose a living player:",
-				"choose a player,",
+				"choose a player:",
+				"choose a player (different from last night):",
+				"the first time you die, you don't. Instead, choose a player:",
+				"choose a living nominee:",
 			],
 			[ // choice-effect
 				"a chosen {Demon;Minion} swaps characters & alignments with you & is then poisoned.",
@@ -463,6 +473,10 @@
 				"chosen Minions swap characters with the Demon.",
 				"you make all their character choices tonight.",
 				"guess their character, and make all its choices tonight. If correct, their choices become your choices.",
+				"the first time they are targeted by the Demon's ability tonight, they are safe and an evil player is targeted instead.",
+				"if they aren't a Demon, they die.",
+				"if good, learn their character, but if evil then get false info. While you live, they can't be executed.",
+				"they cannot die.",
 			]
 		],
 		[ // double-choice
