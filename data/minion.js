@@ -116,6 +116,8 @@
 		"Kidnapper",
 		"Hydra",
 		"Agent",
+		"Necromancer",
+		"Parallax",
 	],
 
 	frequency:
@@ -180,6 +182,8 @@
 		"Each night*,",
 		"Each day,",
 		"On your 1st night,",
+		"Each night*,",
+		"Each night,",
 	],
 
 	styles:
@@ -193,6 +197,7 @@
 				"only the Storyteller can nominate. At least 1 opposing player must be nominated each day.",
 				"only you & the dead can vote. They don't need a vote token to do so.",
 				"you gain a Townsfolk ability or a Minion ability.",
+				"other Minions can't die.",
 			]
 		],
 		[ // choice
@@ -230,9 +235,12 @@
 				"the Storyteller chooses a player:",
 				"choose a living player (not a previously chosen player), if possible:",
 				"you and all other Minions choose a player. If a majority is reached,",
+				"you may choose a dead player: if an Outsider is chosen,",
+				"choose a player:",
+				"choose a player:",
 			],
 			[ // choice-effect
-				"if executed tomorrow, they don't die.",
+				"they cannot die from executions tomorrow.",
 				"if they nominate tomorrow, they die. If just {5;4;4;3;3;3} players live, you lose this ability.",
 				"they are \"mad\" they are a chosen good character tomorrow, or might {be executed;die}.",
 				"they are poisoned tonight and tomorrow day.",
@@ -259,6 +267,12 @@
 				"they regain their ability until dusk.",
 				"they must stay with you during private discussions. Once per game, at the start of nominations, you may kill your previous choice.",
 				"they die.",
+				"they are resurrected or protected and a player dies in their place.",
+				"they are executed.",
+				"they are resurrected, then immediately executed.",
+				"if they would survive execution, they don't. You survive executions instead.",
+				"either you or they are poisoned until dusk. Minions can't die.",
+				"they don't wake tonight. If they are \"mad\" that you are in play, they might die, even if for some reason they should not.",
 			]
 		],
 		[ // double-choice
@@ -277,7 +291,14 @@
 				"they swap seats. Players may not leave their seats to talk in private.",
 				"tomorrow, the 1st player you choose is mad that the last you choose is evil, or both might die.",
 				"they are poisoned until dusk. {All but 1 of them;They all} learn they were targeted.",
-				"in the morning they play roshambo. The loser {dies;is executed}. If they tie, they all {die;are executed;live}."
+				"in the morning they play roshambo. The loser {dies;is executed}. If they tie, they all {die;are executed;live}.",
+				"they are resurrected.",
+				"they swap characters and alignments.",
+				"they swap alignments.",
+				"they swap characters.",
+				"tomorrow, they are not allowed to have private chats with each other.",
+				"they must remain in {Town Square;their seats} tomorrow, or else might be executed.",
+				"they make each others' decisions tonight, but do not learn what each others' powers are.",
 			]
 		],
 		[ // conditional
