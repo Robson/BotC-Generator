@@ -309,6 +309,7 @@
 		"Twice per game, at night,",
 		"Once per game, during the day,",
 		"On your 1st night,",
+		"Each night,",
 	],
 
 	styles:
@@ -362,6 +363,7 @@
 				"you learn {2;2;2;3} players of the same alignment.",
 				"you learn how many players did not wake tonight.",
 				"you have the same ability as a player sat furthest away from you, but might not share alignment.",
+				"you learn the minimum number of days it would take for evil to win.",
 			]
 		],
 		[ // choice
