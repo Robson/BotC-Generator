@@ -264,8 +264,8 @@ var demon =
 		"You do not receive bluffs.",
 		"Your ability malfunctions if another Demon chooses a different player. 1 Minion is also your Demon.",
 		"Your power works even if you are dead.",
-		"The Storyteller chooses one additional player. You decide whether they live or die. You do not know your Minions."
-		"You do not know your Minions."
+		"The Storyteller chooses one additional player. You decide whether they live or die. You do not know your Minions.",
+		"You do not know your Minions.",
 		"You receive 1 less bluff.",
 		"Each day, the 1st {player;Townsfolk;good player} to nominate is poisoned until dawn.",
 		"If you are executed while any evil Minions live, you live and the nominator dies instead.",
