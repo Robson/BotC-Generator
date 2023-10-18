@@ -318,7 +318,7 @@ var outsider =
 				"you turn evil.",
 				"you cannot {die;be executed}.",
 				"either you or a previous choice might {die;be executed;become drunk tonight}.",
-				"you or one of your living neighbors might {be executed;die;become drunk until tomorrow}."
+				"you or one of your living neighbors might {be executed;die;become drunk until tomorrow}.",
 				"you die.",
 				"you are resurrected tomorrow night.",
 			]
